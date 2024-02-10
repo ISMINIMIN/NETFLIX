@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #111;
+}
+
+/* header */
+.navbar {
+    background-color: #111;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo {
+    height: 45px;
+    width: 90px;
+    margin-left: 16px;
+    display: flex;
+    align-items: center;
+}
+
+.logo a {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 100%;
+}
+
+.navbar ul {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.navbar li {
+    list-style: none;
+    padding: 1rem;
+}
+
+.navbar li a {
+    padding: 2px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.navbar li a:hover {
+    color: gray;
+}
+
+/* banner */
+.banner {
+    background-image: url(images/banner.jpg);
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    height: 440px;
+}
+
+.banner-contents {
+    margin-left: 30px;
+    padding-top: 190px;
+    height: 190px;
+}
+
+.banner-title {
+    font-size: 3rem;
+    font-weight: 800;
+    padding-bottom: 0.3rem;
+}
+
+.banner-btn {
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.banner-btn button {
+    width: 60px;
+    height: 30px;
+    color: #111;
+    border-radius: 2px;
+    border: 1px solid transparent;
+}
+
+.banner-btn button:hover {
+    background-color: rgb(171, 163, 163);
+    cursor: pointer;
+}
+
+.banner-description {
+    line-height: 1.5;
+    padding-top: 0.5rem;
+    font-size: 1rem;
+}
+
+/* row */
+.row {
+    color: #fff;
+}
+
+.row h2 {
+    color: #fff;
+    margin-left: 25px;
+    margin-top: 20px;
+}
+
+.row-posters {
+    display: flex;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    padding: 20px;
+}
+
+.row-posters::-webkit-scrollbar {
+    display: none;
+}
+
+.row-poster {
+    width: 100%;
+    object-fit: contain;
+    max-height: 180px;
+    margin-right: 10px;
+    transition: transform 450ms;
+}
+
+.row-poster-large {
+    max-height: 300px;
+}
+
+.row-poster:hover {
+    transform: scale(1.1);
+}
+
+.footer {
+    color: gray;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-size: 12px;
+}
