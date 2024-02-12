@@ -1,15 +1,20 @@
+:root {
+    --primary: #111;
+    --secondary: #FFF;
+}
+
 * {
     margin: 0;
     padding: 0;
 }
 
 body {
-    background-color: #111;
+    background-color: var(--primary);
 }
 
 /* header */
 .navbar {
-    background-color: #111;
+    background-color: var(--primary);
     position: fixed;
     width: 100%;
     top: 0;
@@ -51,7 +56,7 @@ body {
 .navbar li a {
     padding: 2px;
     text-decoration: none;
-    color: #fff;
+    color: var( --secondary);
 }
 
 .navbar li a:hover {
@@ -63,7 +68,7 @@ body {
     background-image: url(images/banner.jpg);
     background-size: cover;
     background-position: center;
-    color: #fff;
+    color: var( --secondary);
     height: 440px;
 }
 
@@ -87,7 +92,7 @@ body {
 .banner-btn button {
     width: 60px;
     height: 30px;
-    color: #111;
+    color: var(--primary);
     border-radius: 2px;
     border: 1px solid transparent;
 }
@@ -105,11 +110,11 @@ body {
 
 /* row */
 .row {
-    color: #fff;
+    color: var( --secondary);
 }
 
 .row h2 {
-    color: #fff;
+    color: var( --secondary);
     margin-left: 25px;
     margin-top: 20px;
 }
